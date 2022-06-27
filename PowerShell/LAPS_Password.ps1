@@ -1,0 +1,1 @@
+﻿Get-AdmPwdPassword -ComputerName "HIS049660"

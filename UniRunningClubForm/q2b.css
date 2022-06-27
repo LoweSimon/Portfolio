@@ -1,0 +1,121 @@
+body {
+    padding: 10px;
+    background-color: #e6e6e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Styling for the header*/
+.header {
+    text-align: left;
+    background: #a8a8a8;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+/*Styling for the "sign in/logout" option*/
+#access {
+    text-align: right;
+    color: white;
+    font-size: 15px;
+    padding-right: 10px;
+}
+
+/* Styling for the navigation bar*/
+.topnav {
+    overflow: hidden;
+    background-color: #1e1e1e;
+}
+
+.topnav a {
+    float: left;
+    color: white;
+    text-align: left;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #a8a8a8;
+    color: black;
+}
+
+.topnav a:active {
+    background-color: aqua;
+    color: white;
+}
+
+/*Styling for the form*/
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/*Styling for the footer of the page*/
+#footer {
+    width: 500px;
+    padding: 15px 0;
+    margin: 0 auto;
+    color: black;
+    font-size: 1rem;
+    line-height: 0.5em;
+    float: left;
+}

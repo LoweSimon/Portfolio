@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Open University Running Club</title>
+    <meta name="author" content="Simon Lowe" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link to stylesheet-->
+    <link rel="stylesheet" href="q2b.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Open University Running Club</h1>
+        <h3 id="access">Sign in/Log out</h3>
+    </div>
+
+    <!--Navigation bar along top of page, under header-->
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#membership">Memberships</a>
+        <a href="#news">News</a>
+    </div>
+
+
+    <!-- Creating blank form to add walk-->
+    <div class="container">
+        <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+            <div class="row">
+                <input type="hidden" id="sessionId" name="sessionId" value="12345678-09ab-1111-cdef" />
+                <div class="col-25">
+                    <label for="fullname">Name: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fullname" name="name" placeholder="Enter name..." />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="date">Date: </label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="date" name="date"  />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="start">Start Time: </label>
+                </div>
+                <div class="col-75">
+                    <input type="time" id="start" name="start" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="meet">Meeting Point: </label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="meet" name="meet" placeholder="Enter Location of Meeting Point..." />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="distance">Distance in Miles: </label>
+                </div>
+                <div class="col-75">
+                    <input type="number" id="distance" name="distance"  />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="notes">Notes: </label>
+                </div>
+                <div class="col-75">
+                    <textarea id="notes" name="notes" placeholder="Enter your notes here..."></textarea>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="approve">Status: </label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="approve" name="status" value="approve" />
+                    <label for="approve">Approve</label>
+                    <input type="radio" id="reject" name="status" value="reject" />
+                    <label for="reject">Reject</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Add Walk" />
+            </div>
+        </form>
+    </div>
+
+    <div id="footer">
+        <p>The Open University</p>
+        <p>&copy; Copyright 2020. All Rights Reserved</p>
+    </div>
+</body>
+</html>
